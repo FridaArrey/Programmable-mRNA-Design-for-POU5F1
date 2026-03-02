@@ -1,0 +1,27 @@
+{
+  "wild_type": {
+    "target_cell": "DendriticCell",
+    "offtarget_cell": "Hepatocyte",
+    "mrl_target": 0.1783,
+    "mrl_offtarget": 0.4526,
+    "delta_mrl": -0.2743,
+    "specificity_ratio": 0.394,
+    "specificity_score": 0.1003,
+    "interpretation": "REVERSED: higher MRL in off-target"
+  },
+  "optimised": {
+    "target_cell": "DendriticCell",
+    "offtarget_cell": "Hepatocyte",
+    "mrl_target": 0.1714,
+    "mrl_offtarget": 0.4351,
+    "delta_mrl": -0.2637,
+    "specificity_ratio": 0.394,
+    "specificity_score": 0.1082,
+    "interpretation": "REVERSED: higher MRL in off-target"
+  },
+  "delta_improvement": {
+    "specificity_score": 0.0079,
+    "specificity_ratio": 0.0
+  },
+  "note": "MRL surrogate validated at r=0.965 vs Sample et al. 2019. Cell-type modulation: Andreev 2015 / Sidrauski 2015. Use specificity_score as 5th objective in nsga_optimizer.py."
+}

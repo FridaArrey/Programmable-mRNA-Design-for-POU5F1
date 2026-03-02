@@ -1,0 +1,11 @@
+{
+  "design": {
+    "miR-122": 3
+  },
+  "target_cell": "DendriticCell",
+  "covered": 7,
+  "total_off_target_cells": 24,
+  "coverage_fraction": 0.2917,
+  "coverage_percent": 29.2,
+  "threshold": 0.5
+}

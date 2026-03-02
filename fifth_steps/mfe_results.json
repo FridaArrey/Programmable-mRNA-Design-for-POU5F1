@@ -1,0 +1,12 @@
+{
+  "sequence_length_nt": 141,
+  "gc_content": 0.4113,
+  "gc_contribution_kcal": -3.19,
+  "stem_stacking_kcal": -246.64,
+  "mir122_sites": 3,
+  "mir122_contribution_kcal": -39.6,
+  "ss_stacking_kcal": -2.11,
+  "total_mfe_kcal": -291.54,
+  "model": "Turner 2004 NN params + Bartel 2004 miRNA duplex",
+  "note": "Approximate model. For publication: use ViennaRNA RNAfold. miRNA contributions cite Bartel 2004; NN params cite Turner 2004."
+}
