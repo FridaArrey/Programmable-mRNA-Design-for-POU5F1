@@ -1,0 +1,12 @@
+LOCUS       Oct4_Optimized            57 bp    mRNA             UNK 01-JAN-1980
+DEFINITION  POU5F1 optimized for Monocyte vs Liver.
+ACCESSION   POU5F1-OPT
+VERSION     POU5F1-OPT
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+ORIGIN
+        1 atggagactg caaccgagac tgcgcagcag cagcagcagc agcagcagca gcagcag
+//
