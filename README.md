@@ -75,13 +75,14 @@ Built by querying a curated miRNA–cell type expression atlas (Patil et al. 202
 ## 🛠 The "Triple-Lock" Architecture
 The platform addresses "The Liver Problem" through three orthogonal engineering layers:
 
-
-graph TD
+    start
     A[Gene Input: POU5F1] --> B{Triple-Lock Engine}
-    subgraph "The Three Locks"
+    
+    "The Three Locks"
     B --> C["5' UTR: ISR-Responsive uORF Gating"]
     B --> D["CDS: Multi-Objective Codon Opt (U < 5%)"]
     B --> E["3' UTR: Cooperative miR-122 Sites"]
+    
     end
     C & D & E --> F[Pareto-Optimal Library]
     F --> G[Synthesis-Ready FASTA/GenBank]
