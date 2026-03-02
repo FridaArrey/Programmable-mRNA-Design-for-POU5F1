@@ -1,0 +1,82 @@
+[
+  {
+    "uorf_sequence": "AAACTATGCAGTAA",
+    "kozak_strength": "weak",
+    "n_codons": 2,
+    "isr_bypass_fraction": 0.77,
+    "normal_bypass_fraction": 0.2,
+    "cell_differential": 1.555,
+    "utr5_sequence": "CGCGCCGAATTCGAGCTCGGAAACTATGCAGTAAGCGGCGGCCACCATG",
+    "citation": "RandomWeak_Calvo2009params"
+  },
+  {
+    "uorf_sequence": "AAACTATGGAATAA",
+    "kozak_strength": "weak",
+    "n_codons": 2,
+    "isr_bypass_fraction": 0.75,
+    "normal_bypass_fraction": 0.2,
+    "cell_differential": 1.539,
+    "utr5_sequence": "CGCGCCGAATTCGAGCTCGGAAACTATGGAATAAGCGGCGGCCACCATG",
+    "citation": "RandomWeak_Calvo2009params"
+  },
+  {
+    "uorf_sequence": "AAACTATGAGTTAA",
+    "kozak_strength": "weak",
+    "n_codons": 2,
+    "isr_bypass_fraction": 0.8,
+    "normal_bypass_fraction": 0.25,
+    "cell_differential": 1.486,
+    "utr5_sequence": "CGCGCCGAATTCGAGCTCGGAAACTATGAGTTAAGCGGCGGCGGCGGCCACCATG",
+    "citation": "Andreev2015_ATF4_uORF1_proxy"
+  },
+  {
+    "uorf_sequence": "AAACTATGAAATAG",
+    "kozak_strength": "weak",
+    "n_codons": 2,
+    "isr_bypass_fraction": 0.7,
+    "normal_bypass_fraction": 0.21,
+    "cell_differential": 1.479,
+    "utr5_sequence": "CGCGCCGAATTCGAGCTCGGAAACTATGAAATAGGCGGCGGCCACCATG",
+    "citation": "RandomWeak_Calvo2009params"
+  },
+  {
+    "uorf_sequence": "AAACTATGAAAGCTTAA",
+    "kozak_strength": "weak",
+    "n_codons": 3,
+    "isr_bypass_fraction": 0.78,
+    "normal_bypass_fraction": 0.25,
+    "cell_differential": 1.471,
+    "utr5_sequence": "CGCGCCGAATTCGAGCTCGGAAACTATGAAAGCTTAAGCGGCGGCGGCGGCCACCATG",
+    "citation": "Hinnebusch2016_ISRresponsive"
+  },
+  {
+    "uorf_sequence": "AAACTATGCGATCGTAA",
+    "kozak_strength": "weak",
+    "n_codons": 3,
+    "isr_bypass_fraction": 0.75,
+    "normal_bypass_fraction": 0.25,
+    "cell_differential": 1.449,
+    "utr5_sequence": "CGCGCCGAATTCGAGCTCGGAAACTATGCGATCGTAAGCGGCGGCGGCGGCCACCATG",
+    "citation": "Calvo2009_shortWeakKozak"
+  },
+  {
+    "uorf_sequence": "GCCATGAAATAA",
+    "kozak_strength": "medium",
+    "n_codons": 2,
+    "isr_bypass_fraction": 0.45,
+    "normal_bypass_fraction": 0.12,
+    "cell_differential": 1.429,
+    "utr5_sequence": "CGCGCCGAATTCGAGCTCGGGCCATGAAATAAGCGGCGGCGGCGGCCACCATG",
+    "citation": "Calvo2009_mediumKozak"
+  },
+  {
+    "uorf_sequence": "AAACTATGCGATCGAAGTAA",
+    "kozak_strength": "weak",
+    "n_codons": 4,
+    "isr_bypass_fraction": 0.72,
+    "normal_bypass_fraction": 0.25,
+    "cell_differential": 1.426,
+    "utr5_sequence": "CGCGCCGAATTCGAGCTCGGAAACTATGCGATCGAAGTAAGCGGCGGCGGCGGCCACCATG",
+    "citation": "Andreev2015_extended"
+  }
+]

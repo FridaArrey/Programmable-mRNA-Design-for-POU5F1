@@ -1,0 +1,22 @@
+{
+  "validation": {
+    "independent": {
+      "pearson_r": 0.8961,
+      "rmse": 0.2311
+    },
+    "cooperative": {
+      "pearson_r": 0.9004,
+      "rmse": 0.2198
+    },
+    "improvement_in_rmse": 0.0113
+  },
+  "three_site_result": {
+    "n_sites": 3,
+    "liver_silencing": 0.9462,
+    "target_silencing": 0.12,
+    "liver_expression_remaining": 0.0538,
+    "target_expression_remaining": 0.88,
+    "expression_ratio_target_liver": 16.352,
+    "model": "Cooperative Ago2 (Wee 2012 Hill kinetics + Grimson 2007 context)"
+  }
+}

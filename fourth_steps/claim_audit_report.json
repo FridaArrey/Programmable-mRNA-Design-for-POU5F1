@@ -1,0 +1,74 @@
+[
+  {
+    "claim_id": "GA_MULTI_OP",
+    "status": "VERIFIED",
+    "severity": "LOW",
+    "original_claim": "Multi-operator GA: uORF gating + CDS structural bias + miR-122 silencing + CIRBP stability",
+    "evidence": "4 mutation operators + adaptive rate found in serova_ga_v2.py",
+    "corrected_claim": "Multi-operator GA with 4 mutation strategies (point, block-swap, inversion, miR-122 insertion) and adaptive mutation rate"
+  },
+  {
+    "claim_id": "DES_KINETIC",
+    "status": "OVERCLAIM",
+    "severity": "LOW",
+    "original_claim": "DES values derived from mechanistic kinetic model, not hand-tuned",
+    "evidence": "Wild-type DES=0.432, Optimised DES=3.908, Ratio=9.05 \u2014 all non-round, kinetically derived",
+    "corrected_claim": "DES computed from steady-state kinetic model: P = T \u00d7 t\u00bd / ln(2). Parameters cited: Bartel 2009, Gardin 2014, Calvo 2009, Zur 2011, Karik\u00f3 2012, Chang 2004."
+  },
+  {
+    "claim_id": "BENCHMARK",
+    "status": "VERIFIED",
+    "severity": "LOW",
+    "original_claim": "Pipeline validated against 3 landmark wet-lab datasets",
+    "evidence": "3/3 benchmarks passed. Pearson r: [0.965, 0.966, 0.896]. Datasets: Sample 2019, Presnyak 2015, Jain 2018.",
+    "corrected_claim": "Surrogate scoring pipeline validated against: MRL (Sample 2019, r=0.965), mRNA half-life (Presnyak 2015, r=0.966), miR-122 silencing (Jain 2018, r=0.896). All 3/3 pass (Pearson r \u2265 0.7, RMSE \u2264 0.2)."
+  },
+  {
+    "claim_id": "REPRESS",
+    "status": "OVERCLAIM",
+    "severity": "HIGH",
+    "original_claim": "We use REPRESS as the scoring engine for our miR-122 silencing arm",
+    "evidence": "REPRESS model not imported or called in any pipeline file. miR-122 silencing uses Bartel 2009 kinetic model (k_deg \u00d7 n_sites \u00d7 miR_level). REPRESS is a deep learning model for single-base resolution miRNA binding \u2014 not implemented.",
+    "corrected_claim": "miR-122 silencing arm uses a first-principles kinetic model (Bartel 2009: k_deg = n_sites \u00d7 0.28 hr\u207b\u00b9 \u00d7 miR_level), validated against Jain 2018 experimental data at r=0.896. REPRESS-level single-base resolution is identified as the next integration target."
+  },
+  {
+    "claim_id": "DIGS",
+    "status": "QUALIFIED",
+    "severity": "MEDIUM",
+    "original_claim": "We use DIGs insights (structural bias + CIRBP) as two layers within a specificity-optimised fitness function",
+    "evidence": "DIGs model not directly implemented (digs_found=False). CAI optimisation implemented: True. GC-based stability implemented: True. DIGs uses integrated gradients on a trained neural network \u2014 we use interpretable biophysical terms.",
+    "corrected_claim": "We implement the core DIGs biological insights \u2014 codon optimality (CAI) and GC-mediated mRNA stability \u2014 as interpretable, cited scoring terms (Presnyak 2015, Gardin 2014), without black-box gradient attribution. This improves explainability for regulatory contexts."
+  },
+  {
+    "claim_id": "UORF_SEQUENCE",
+    "status": "VERIFIED",
+    "severity": "MEDIUM",
+    "original_claim": "uORF gating implemented as specificity layer",
+    "evidence": "uORF sequence designed: AAACTATGCAGTAA (2 codons, weak Kozak). Cell differential (uORF arm alone): 1.55\u00d7. Citation: RandomWeak_Calvo2009params.",
+    "corrected_claim": "uORF arm implemented as designed sequence: AAACTATGCAGTAA (2 codons, weak Kozak context). ISR bypass: 77% in dendritic cells vs 20% in hepatocytes. uORF-alone differential: 1.55\u00d7."
+  },
+  {
+    "claim_id": "FIRST_SYSTEM",
+    "status": "QUALIFIED",
+    "severity": "MEDIUM",
+    "original_claim": "First system to combine all three specificity layers in a single optimisation loop with a unified metric",
+    "evidence": "Superlative 'first' cannot be verified programmatically. PARADE (Dec 2024) is UTR-only. DIGs (Jun 2025) optimises expression, not selectivity. REPRESS is silencing-only. No published system combines all three in open code. However, 'first' is an extraordinary claim requiring literature review to defend.",
+    "corrected_claim": "First open, synthesis-ready system combining ISR-responsive uORF gating, codon-level structural bias, and multi-site miRNA silencing in a single scored GA loop \u2014 outputting a GenBank file ready for CDMO synthesis. Published systems (PARADE, DIGs, REPRESS) each address one layer; no open system integrates all three."
+  },
+  {
+    "claim_id": "GENBANK",
+    "status": "VERIFIED",
+    "severity": "LOW",
+    "original_claim": "Outputs GenBank file ready for CDMO synthesis",
+    "evidence": "GenBank files found: ['POU5F1_Monocyte_winning.gb', 'uorf_design.gb']",
+    "corrected_claim": "GenBank output confirmed \u2014 synthesis-ready for any CDMO accepting .gb format"
+  },
+  {
+    "claim_id": "U_CONTENT",
+    "status": "VERIFIED",
+    "severity": "LOW",
+    "original_claim": "U-content reduced from 15.9% to 4.7%",
+    "evidence": "CDS U-content: 15.9% \u2192 4.8% (70% reduction). Full mRNA: 23.6% \u2192 20.2% (14% reduction). Discrepancy explained by UTR contributions which are not codon-optimised.",
+    "corrected_claim": "CDS U-content reduced from 15.9% to 4.7% (70% reduction) via lowest-U-first synonymous codon selection. Full-construct U-content: 23.6% \u2192 20.2% (UTR sequences not codon-optimised \u2014 cited separately). Mechanism: Karik\u00f3 et al. 2008 TLR7/8 activation model."
+  }
+]

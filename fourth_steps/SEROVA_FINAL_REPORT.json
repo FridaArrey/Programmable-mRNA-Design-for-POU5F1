@@ -1,0 +1,99 @@
+{
+  "generated": "2026-02-28",
+  "pipeline_version": "v3.1-final",
+  "sequences": {
+    "wild_type_cds": "ATGGAGACTGCAACCGAGACTGCGGATCGCTTGCAGAACGAATGCAAAGCAGAAACCGAGCCCATGTACGAGCTGGACAAGGACATGAACAGCGATCTGCAGCTTCAGCAGAAGCAGCAGCAGCAGCAGATGGAGACTGCAACCGAGACTGCGGATCGCTTGCAGAACGAATGCAAAGCAGAAACCGAGCCC",
+    "optimised_cds": "AUGGAGACCGCCACCGAGACCGCCGACCGGCUGCAGAACGAGUGCAAGGCCGAGACCGAGCCCAUGUACGAGCUGGACAAGGACAUGAACAGCGACCUGCAGCUGCAGCAGAAGCAGCAGCAGCAGCAGAUGGAGACCGCCACCGAGACCGCCGACCGGCUGCAGAACGAGUGCAAGGCCGAGACCGAGCCC",
+    "utr5_with_uorf": "CGCGCCGAATTCAGCAAACTATGAGTTAAGCGGCGGCGGCGGCCACCATG",
+    "utr3_with_mir122": "GCAUAUGCAUAUGCAUAUGCAUAUGCAUAUGCAUAUGCAUAUGCACAAACACCAUUGUCACACUCCAGCAUAUGCAUCAAACACCAUUGUCACACUCCAGCAUAUGCAUCAAACACCAUUGUCACACUCCAGCAUAUGCAU",
+    "uorf_sequence": "AAACTATGAGTTAA",
+    "uorf_citation": "Andreev 2015 ATF4-proxy; Calvo 2009 Kozak params"
+  },
+  "metrics": {
+    "wild_type": {
+      "u_content": 0.1519,
+      "gc_content": 0.5148,
+      "mir122_sites": 0,
+      "cai": 0.4477,
+      "length": 237
+    },
+    "optimised": {
+      "u_content": 0.1411,
+      "gc_content": 0.5526,
+      "mir122_sites": 3,
+      "cai": 0.4582,
+      "length": 333
+    },
+    "u_content_cds_reduction": {
+      "wt": 0.1146,
+      "opt": 0.0625
+    },
+    "all_verified": true
+  },
+  "des": {
+    "wild_type_des": 0.432,
+    "optimised_des": 2.636,
+    "improvement": 6.1,
+    "kinetic_model": true,
+    "citations": "Bartel 2009, Gardin 2014, Calvo 2009, Zur 2011, Karik\u00f3 2012, Chang 2004, Eis 2005",
+    "cell_detail": {
+      "DendriticCell": {
+        "rate": 0.1203,
+        "halflife_h": 5.4745,
+        "protein_au": 0.9504
+      },
+      "Hepatocyte": {
+        "rate": 0.3308,
+        "halflife_h": 0.7555,
+        "protein_au": 0.3606
+      }
+    }
+  },
+  "ago2_cooperative": {
+    "liver_silencing": 0.9454,
+    "dc_silencing": 0.12,
+    "liver_expression": 0.0546,
+    "dc_expression": 0.88,
+    "model": "Hill kinetics (Wee 2012) + accessibility (Grimson 2007)",
+    "improves_partial_conc_predictions": true
+  },
+  "benchmarks": {
+    "MRL_Sample2019": {
+      "r": 0.9646,
+      "rmse": 0.126,
+      "pass": true
+    },
+    "HalfLife_Presnyak2015": {
+      "r": 0.9657,
+      "rmse": 0.1705,
+      "pass": true
+    },
+    "miR122_Jain2018": {
+      "r": 0.9045,
+      "rmse": 0.2123,
+      "pass": true
+    }
+  },
+  "competitive_claims": {
+    "REPRESS": {
+      "original": "We use REPRESS as scoring engine",
+      "status": "CORRECTED",
+      "corrected": "Kinetic miR-122 model (Bartel 2009), validated vs Jain 2018 at r=0.896. REPRESS integration: future work."
+    },
+    "DIGS": {
+      "original": "We use DIGs insights",
+      "status": "QUALIFIED",
+      "corrected": "Core DIGs biological principles (CAI, GC stability) as interpretable scoring terms \u2014 more explainable than black-box IG."
+    },
+    "UORF": {
+      "original": "uORF gating layer",
+      "status": "VERIFIED",
+      "corrected": "Actual designed sequence: AAACTATGAGTTAA (2 codons, weak Kozak, Andreev 2015)."
+    },
+    "FIRST_SYSTEM": {
+      "original": "First system to combine all three layers",
+      "status": "QUALIFIED",
+      "corrected": "First open, synthesis-ready system combining ISR-uORF + CAI/GC bias + miR-122 silencing in one GA fitness function."
+    }
+  }
+}

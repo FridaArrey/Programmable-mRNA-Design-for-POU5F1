@@ -1,0 +1,37 @@
+LOCUS       SEROVA_POU5F1_5UTR     49 bp    DNA     linear   SYN 2026-02-28
+DEFINITION  Designed 5'UTR with ISR-responsive uORF for POU5F1 mRNA
+            therapeutic. Target: DendriticCell. Off-target: Hepatocyte.
+ACCESSION   SEROVA_UORF_v1
+VERSION     SEROVA_UORF_v1.0
+KEYWORDS    uORF; ISR; POU5F1; mRNA design; cell-type specificity.
+SOURCE      Synthetic construct
+  ORGANISM  Synthetic construct
+REFERENCE   1  (bases 1 to 49)
+  AUTHORS   Serova Therapeutics
+  TITLE     ISR-responsive uORF design for POU5F1 cell-type specificity
+  JOURNAL   Berlin Biohack 2026
+COMMENT     uORF designed using Calvo 2009 / Andreev 2015 / Hinnebusch 2016
+            parameters. ISR bypass fraction: 77% (DC),
+            20% (hepatocyte).
+            Cell-type differential (uORF arm only): 1.56x.
+FEATURES             Location/Qualifiers
+     source          1..49
+                     /organism="Synthetic construct"
+                     /mol_type="other DNA"
+     5'UTR           1..49
+                     /note="Designed 5'UTR"
+     misc_feature    1..20
+                     /note="Spacer / cap-proximal region"
+     CDS             21..34
+                     /note="uORF - ISR responsive"
+                     /codon_start=1
+                     /product="uORF peptide (non-functional)"
+                     /kozak_strength="weak"
+                     /isr_bypass="77%"
+                     /citation="RandomWeak_Calvo2009params"
+     regulatory      35..49
+                     /regulatory_class="ribosome_binding_site"
+                     /note="Inter-uORF spacer + strong Kozak for main ORF"
+ORIGIN
+        1 cgcgccgaattcgagctcggaaactatgcagtaagcggcggccaccatg
+//
