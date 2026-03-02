@@ -1,0 +1,74 @@
+{
+  "wild_type": {
+    "label": "Wild-Type",
+    "target_cell": "DendriticCell",
+    "offtarget_cell": "Hepatocyte",
+    "des": 0.432,
+    "protein_target_au": 2.0075,
+    "protein_offtarget_au": 4.6457,
+    "target_breakdown": {
+      "elongation_rate": 0.568,
+      "uorf_factor": 1.0,
+      "modification_boost": 1.0,
+      "cap_factor": 0.7,
+      "ribosome_density": 0.55,
+      "translation_rate": 0.2187,
+      "mrna_halflife_hours": 6.3632,
+      "protein_level_au": 2.0075
+    },
+    "offtarget_breakdown": {
+      "elongation_rate": 0.568,
+      "uorf_factor": 1.0,
+      "modification_boost": 1.0,
+      "cap_factor": 0.9,
+      "ribosome_density": 0.85,
+      "translation_rate": 0.4345,
+      "mrna_halflife_hours": 7.4108,
+      "protein_level_au": 4.6457
+    },
+    "construct": {
+      "n_mir122_sites": 0,
+      "cai": 0.52,
+      "gc_content": 0.55,
+      "u_content": 0.29,
+      "has_uorf": false,
+      "uorf_strength": 0.0
+    }
+  },
+  "optimised": {
+    "label": "Optimised",
+    "target_cell": "DendriticCell",
+    "offtarget_cell": "Hepatocyte",
+    "des": 3.908,
+    "protein_target_au": 4.1945,
+    "protein_offtarget_au": 1.0732,
+    "target_breakdown": {
+      "elongation_rate": 0.802,
+      "uorf_factor": 0.61,
+      "modification_boost": 2.8,
+      "cap_factor": 0.7,
+      "ribosome_density": 0.55,
+      "translation_rate": 0.5274,
+      "mrna_halflife_hours": 5.513,
+      "protein_level_au": 4.1945
+    },
+    "offtarget_breakdown": {
+      "elongation_rate": 0.802,
+      "uorf_factor": 0.844,
+      "modification_boost": 1.9,
+      "cap_factor": 0.9,
+      "ribosome_density": 0.85,
+      "translation_rate": 0.9839,
+      "mrna_halflife_hours": 0.7561,
+      "protein_level_au": 1.0732
+    },
+    "construct": {
+      "n_mir122_sites": 3,
+      "cai": 0.78,
+      "gc_content": 0.53,
+      "u_content": 0.21,
+      "has_uorf": true,
+      "uorf_strength": 0.65
+    }
+  }
+}

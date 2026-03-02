@@ -1,0 +1,26 @@
+[
+  {
+    "benchmark": "MRL",
+    "pearson_r": 0.9648,
+    "spearman_r": 0.8095,
+    "rmse": 0.1259,
+    "status": "\u2705 PASS",
+    "n": 8
+  },
+  {
+    "benchmark": "Half-Life",
+    "pearson_r": 0.9657,
+    "spearman_r": 0.8571,
+    "rmse": 0.1705,
+    "status": "\u2705 PASS",
+    "n": 7
+  },
+  {
+    "benchmark": "miR-122",
+    "pearson_r": 0.8961,
+    "spearman_r": 0.8857,
+    "rmse": 0.2311,
+    "status": "\u2705 PASS",
+    "n": 6
+  }
+]

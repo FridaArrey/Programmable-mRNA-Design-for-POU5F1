@@ -1,0 +1,11 @@
+{
+  "backend_used": "Biophysical surrogate (literature-calibrated)",
+  "mean_ribosome_load": 0.5652,
+  "half_life_score": 0.7438,
+  "translation_efficiency": 0.6366,
+  "liver_detarget_score": 0.8976,
+  "stealth_score": 1.0,
+  "composite": 0.7485,
+  "confidence": "medium",
+  "notes": "CAI=0.368 | GC=0.548 | U=0.108 | miR122_hits=2 | Coefficients: Sample2019, Presnyak2015, Karik\u00e12008, Jain2018"
+}
