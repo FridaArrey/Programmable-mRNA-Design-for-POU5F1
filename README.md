@@ -75,7 +75,7 @@ Built by querying a curated miRNA–cell type expression atlas (Patil et al. 202
 ## 🛠 The "Triple-Lock" Architecture
 The platform addresses "The Liver Problem" through three orthogonal engineering layers:
 
-```mermaid
+
 graph TD
     A[Gene Input: POU5F1] --> B{Triple-Lock Engine}
     subgraph "The Three Locks"
